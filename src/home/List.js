@@ -16,5 +16,4 @@ const List = () => (
     </div>
   </CustomCard>
 );
-
 export default List;
