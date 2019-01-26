@@ -6,7 +6,7 @@ import ListItem from "./ListItem";
 import "./List.css"
 
 const List = () => (
-  <CustomCard containerClass="list-container" footer={<ListFooter />}>
+  <CustomCard containerClass="list-container" footer={<ListFooter />} link="/lista">
     <div>
       <p className="title">Mês</p>
       <div className="list-card-body">

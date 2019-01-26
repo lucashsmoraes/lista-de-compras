@@ -1,9 +1,21 @@
 .title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .header {
-    padding: 0px 20px;
+  padding: 0px 20px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
