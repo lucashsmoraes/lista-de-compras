@@ -1,10 +1,6 @@
-.new-list-container {
-    width: 80%;
-}
-
 .list-container {
     width: 220px;
-    margin: 25px;    
+    margin: 20px;    
 }
 
 .list-card-body {

@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 import "./CustomCard.css";
 
 const CustomCard = props => (
-  <Link to={props.link}>
-    <div className={props.containerClass}>
+  <div className={props.containerClass}>
+    <Link to={props.link}>
       <Card className="card">
         <CardActionArea className="card-action-area">
           <CardContent className="card-content">{props.children}</CardContent>
@@ -22,8 +22,8 @@ const CustomCard = props => (
           </div>
         )}
       </Card>
-    </div>
-  </Link>
+    </Link>
+  </div>
 );
 
 CustomCard.prototype = {
