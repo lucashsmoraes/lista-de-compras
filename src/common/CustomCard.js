@@ -13,12 +13,17 @@ const CustomCard = props => (
     <Link to={props.link}>
       <Card className="card">
         <CardActionArea className="card-action-area">
-          <CardContent className="card-content">{props.children}</CardContent>
+          
+          <CardContent className="card-content">
+            {props.children}
+          </CardContent>
         </CardActionArea>
-        {props.footer && (
+        { props.footer && (
           <div>
             <Divider />
-            <CardActions className="footer">{props.footer}</CardActions>
+            <CardActions className="card-footer">
+              { props.footer }
+            </CardActions>
           </div>
         )}
       </Card>
@@ -28,7 +33,7 @@ const CustomCard = props => (
 
 CustomCard.prototype = {
   containerClass: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.element,
   footer: PropTypes.string
 };
 export default CustomCard;
