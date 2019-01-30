@@ -18,3 +18,7 @@
 .card-footer {
   height: 40px;
 }
+
+.card-image {
+  object-fit: cover;
+}
