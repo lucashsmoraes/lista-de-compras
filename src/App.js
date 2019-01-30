@@ -9,12 +9,15 @@ import Home from "./home";
 import CreateList from "./createList";
 
 const theme = createMuiTheme({
+  typography: {
+    useNextVariants: true,
+  },
   palette: {
     primary: {
       main: "#2196f3"
     },
     secondary: {
-      main: "#b2ebf2"
+      main: '#43a047'
     }
   }
 });
