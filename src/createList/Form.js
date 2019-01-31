@@ -21,6 +21,11 @@ class Form extends Component {
     })
   )
 
+  handleSubmit = () => {  
+    const { list, product, quantity, unit, price } = this.state
+    this.props.addProduct({product, quantity, unit, price}, list)
+  }
+
   render() {
     return (
       <form className="form-container">
@@ -32,7 +37,7 @@ class Form extends Component {
             onChange={this.handleChange}
             required
           />
-          <Button variant="outlined" color="secondary">
+          <Button variant="outlined" onClick={this.handleSubmit} color="secondary">
             Adicionar
           </Button>
         </div>
@@ -54,7 +59,7 @@ class Form extends Component {
           <TextField
             select
             label="Unidade"
-            name="unity"
+            name="unit"
             value={this.state.unit}
             onChange={this.handleChange}
             required
