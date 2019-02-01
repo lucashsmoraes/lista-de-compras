@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ListFooter = () => {
+const ListFooter = (props) => {
     return (
         <div className="list-footer">
         <p> 01/01/2019</p>
-        <p>100.00</p>
+        <p>{props.total}</p>
       </div>
     );
 };
